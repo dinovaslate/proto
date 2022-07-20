@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+.bottom-nav {
+  z-index: 9999;
+  position: fixed;
+  inset: auto 0 0 0;
+  height: 70px;
+  width: 100%;
+  background-color: clr(neutral, light);
+  @include flex($align: stretch, $justify: center, $gap: 4rem);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 10px 0 rgba($color: clr(neutral, dark), $alpha: 0.1);
+  &__item {
+    @include flex($align: center, $justify: center);
+
+    &:nth-child(1) {
+      border-right: none;
+    }
+    & > img {
+      cursor: pointer;
+      transition: 500ms ease-in-out;
+      opacity: 0.8;
+      color: yellow;
+    }
+    &:hover > img,
+    &.active > img {
+      filter: drop-shadow(0 0 5px clr(primary, orange))
+        drop-shadow(0 0 5px clr(primary, red))
+        drop-shadow(0 0 5px clr(primary, yellow))
+        drop-shadow(0 0 5px clr(primary, green));
+    }
+  }
+}

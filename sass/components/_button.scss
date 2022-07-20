@@ -1,0 +1,8 @@
+.button {
+  background-color: color.scale(clr(primary, red), $lightness: -30%);
+  border-radius: 10px;
+  color: white;
+  font-family: $ff-sans;
+  font-weight: 600;
+  padding: 0.5rem 1.75rem;
+}

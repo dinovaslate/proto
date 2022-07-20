@@ -4,11 +4,242 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="/sass/main.scss" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="ambient bg-primary-red"></div>
+    <div class="ambient bg-primary-yellow"></div>
+    <div class="ambient bg-primary-blue"></div>
+    <div class="ambient bg-primary-orange"></div>
+    <div class="ambient bg-primary-green"></div>
+    <div class="ambient bg-primary-yellow"></div>
+    <div class="navbar">
+      <div class="left-content">Streamy</div>
+      <div class="right-content">
+        <div class="navbar__item">All Streams</div>
+        <div class="profile">
+          <div class="profile__picture">
+            <img
+              src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+              alt="profile"
+            />
+          </div>
+          <div class="profile__content">
+            <div class="profile__content__name">Roxanne Wolf</div>
+            <div class="profile__content__desc">Sign Out</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-32-block-start">
+      <div class="navigation">
+        <div class="navigation__back-button">
+          <img src="back-button-svgrepo-com.svg" alt="nav-back" />
+        </div>
+        <div class="navigation__profile">
+          <div class="navigation__profile__image">
+            <img
+              src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?w=2000"
+              alt="profile"
+            />
+          </div>
+          <div class="navigation__content">
+            <div class="navigation__content__name">Roxanne Wolf</div>
+            <div class="navigation__content__desc">Sign Out</div>
+          </div>
+        </div>
+      </div>
+      <div class="tab active" id="streams">
+        <h1 class="clr-neutral-dark header-title fs-800 margin-40-block-start">
+          Browse Stream
+        </h1>
+        <div class="clr-neutral-dark header-subtitle fs-600">
+          Prepare to see the next generation of gaming channel with our site
+        </div>
+        <div class="card-list margin-36-block-start">
+          <div class="card padding-16">
+            <div class="card__thumbnail">
+              <img
+                src="https://assets1.ignimgs.com/2018/03/06/fortnite---button-1520296499714.jpg"
+                width="100"
+                alt=""
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__title">Fortnite</div>
+              <div class="card__user">Roxanne Wolf</div>
+              <div class="card__meta margin-8-block-start">
+                <div class="card__meta__genre">
+                  <img src="icons8-joystick-30.png" width="20" alt="genre" />
+                  <span>Action</span>
+                </div>
+                <div class="card__meta__comments">
+                  <img
+                    src="comment-svgrepo-com.svg"
+                    width="20"
+                    alt="comment"
+                  />120
+                </div>
+              </div>
+            </div>
+            <div class="card__action">Play</div>
+          </div>
+          <div class="card padding-16">
+            <div class="card__thumbnail">
+              <img
+                src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Xbox_Minecraft_WildUpdate_Main_.Net_600x360.png"
+                width="100"
+                alt=""
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__title">Minecraft</div>
+              <div class="card__user">Ali Gaming</div>
+              <div class="card__meta margin-8-block-start">
+                <div class="card__meta__genre">
+                  <img src="icons8-joystick-30.png" width="20" alt="genre" />
+                  <span>Adventure</span>
+                </div>
+                <div class="card__meta__comments">
+                  <img
+                    src="comment-svgrepo-com.svg"
+                    width="20"
+                    alt="comment"
+                  />69
+                </div>
+              </div>
+            </div>
+            <div class="card__action">Play</div>
+          </div>
+          <div class="card padding-16">
+            <div class="card__thumbnail">
+              <img
+                src="https://pemmzchannel.com/wp-content/uploads/2022/01/7up-v2-3840x2160-e11fc91a84d6-scaled-1.jpeg"
+                width="100"
+                alt=""
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__title">Fortnite</div>
+              <div class="card__user">Keanu Gaming</div>
+              <div class="card__meta margin-8-block-start">
+                <div class="card__meta__genre">
+                  <img src="icons8-joystick-30.png" width="20" alt="genre" />
+                  <span>Action</span>
+                </div>
+                <div class="card__meta__comments">
+                  <img
+                    src="comment-svgrepo-com.svg"
+                    width="20"
+                    alt="comment"
+                  />120
+                </div>
+              </div>
+            </div>
+            <div class="card__action">Play</div>
+          </div>
+          <div class="card padding-16">
+            <div class="card__thumbnail">
+              <img
+                src="https://marketplace.canva.com/EAEIZcSmPFI/1/0/1600w/canva-black-and-yellow-dark-gamer-survival-youtube-thumbnail-ap4UDond284.jpg"
+                width="100"
+                alt=""
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__title">Among Us (War Edition)</div>
+              <div class="card__user">Barco Falih</div>
+              <div class="card__meta margin-8-block-start">
+                <div class="card__meta__genre">
+                  <img src="icons8-joystick-30.png" width="20" alt="genre" />
+                  <span>Action</span>
+                </div>
+                <div class="card__meta__comments">
+                  <img
+                    src="comment-svgrepo-com.svg"
+                    width="20"
+                    alt="comment"
+                  />120
+                </div>
+              </div>
+            </div>
+            <div class="card__action">Play</div>
+          </div>
+        </div>
+      </div>
+      <div class="tab" id="story">
+        <h1 class="clr-neutral-dark header-title fs-800 margin-40-block-start">
+          See our story
+        </h1>
+        <div class="clr-neutral-dark header-subtitle fs-600">
+          Prepare to see the next generation of gaming channel with our site
+        </div>
+        <div class="card-list margin-36-block-start">
+          <div class="card padding-16 book">
+            <div class="card__thumbnail">
+              <img
+                src="https://media.istockphoto.com/vectors/reading-books-vector-illustration-with-human-hands-holding-open-book-vector-id1330024444?b=1&k=20&m=1330024444&s=612x612&w=0&h=dMoP1-9D0_0n8zxI5-5nkelB9WN0AHnutShFzX_iUQk="
+                width="100"
+                alt=""
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__title">Fortnite</div>
+              <div class="card__desc card__user">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, nulla. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora, accusantium.
+              </div>
+              <div class="card__meta margin-8-block-start">
+                <div class="card__meta__genre">
+                  <img src="icons8-joystick-30.png" width="20" alt="genre" />
+                  <span>Action</span>
+                </div>
+                <div class="card__meta__comments">
+                  <img
+                    src="comment-svgrepo-com.svg"
+                    width="20"
+                    alt="comment"
+                  />120
+                </div>
+              </div>
+            </div>
+            <div class="card__action bg-primary-blue-dark">Read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <div
+        class="bottom-nav__item active"
+        onclick="changeTab(event, '#streams')"
+      >
+        <img src="gaming-svgrepo-com.svg" width="40" />
+      </div>
+      <div class="bottom-nav__item" onclick="changeTab(event, '#story')">
+        <img src="book-svgrepo-com.svg" width="40" />
+      </div>
+    </div>
+    <script>
+      const changeTab = (e, toggle) => {
+        const navs = document.querySelectorAll('.bottom-nav__item');
+        const tabs = document.querySelectorAll('.tab');
+
+        for (const element of [...navs, ...tabs]) {
+          if (element.classList.contains('active'))
+            element.classList.remove('active');
+        }
+
+        document.querySelector(toggle).classList.add('active');
+      };
+    </script>
   </body>
 </html>

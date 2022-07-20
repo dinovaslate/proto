@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+.navigation {
+  @include mq(medium) {
+    display: none;
+  }
+  @include flex($align: center, $justify: space-between);
+  &__back-button img {
+    width: 40px;
+  }
+  &__profile {
+    @include flex($align: center, $justify: center, $gap: 0.5rem);
+    &__image img {
+      width: 50px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 0 clr(primary, orange);
+    }
+  }
+  &__content {
+    &__name {
+      @include bold($ff-roboto);
+      text-transform: capitalize;
+      line-height: 10px;
+    }
+    &__desc {
+      font-weight: 200;
+      font-size: font-size(200);
+    }
+  }
+}

@@ -4,18 +4,18 @@
   @if meta.type-of($shade) == map {
     @each $subcolor, $subshade in $shade {
       .clr-#{$color}-#{$subcolor} {
-        color: $subshade;
+        color: $subshade !important;
       }
       .bg-#{$color}-#{$subcolor} {
-        color: $subshade;
+        background-color: $subshade !important;
       }
     }
   } @else {
     .clr-#{$color} {
-      color: $shade;
+      color: $shade !important;
     }
     .bg-#{$color} {
-      color: $shade;
+      background-color: $shade !important;
     }
   }
 }

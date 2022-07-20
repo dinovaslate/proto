@@ -2,6 +2,7 @@
 @use 'sass:meta';
 @use 'sass:map';
 @use 'breakpoints' as *;
+@use 'typography' as *;
 @mixin mq($size) {
   $breakpoint: null;
   @if map.has-key($breakpoints, $size) {
@@ -31,4 +32,23 @@
   @media screen and (min-width: $breakpoint) {
     @content;
   }
+}
+
+@mixin bold($ff: $ff-bebas-neue) {
+  text-transform: uppercase;
+  font-family: $ff;
+  font-weight: bold;
+}
+@mixin sub($ff: $ff-roboto) {
+  text-transform: capitalize;
+  font-family: $ff;
+  font-weight: 200;
+}
+
+@mixin flex($align: flex-start, $justify: stretch, $gap: 0, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-direction: $direction;
 }

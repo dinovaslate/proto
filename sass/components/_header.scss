@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.header-title {
+  @include bold($ff-bebas-neue);
+  letter-spacing: 0.1rem;
+  line-height: 5px;
+}
+
+.header-subtitle {
+  width: 500px;
+  @include mq(small) {
+    width: fit-content;
+    font-size: font-size(500) !important;
+  }
+}

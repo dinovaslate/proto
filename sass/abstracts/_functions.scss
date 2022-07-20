@@ -1,6 +1,8 @@
 @use 'sass:list';
 @use 'sass:string';
-
+@use 'sass:map';
+@use 'colors' as *;
+@use 'typography' as *;
 @function suggest($size) {
   $units: em, ch, ex, rem, vw, vh, cm, mm, in, px, pt, pc;
   $suggestions: ();
@@ -14,4 +16,19 @@
     }
   }
   @return $suggestions;
+}
+
+@function clr($color...) {
+  @if (map.has-key($colors, $color...)) {
+    @return map.get($colors, $color...);
+  }
+
+  @error "No color is available at that selector";
+}
+@function font-size($color...) {
+  @if (map.has-key($font-sizes, $color...)) {
+    @return map.get($font-sizes, $color...);
+  }
+
+  @error "No font size is available at that selector";
 }

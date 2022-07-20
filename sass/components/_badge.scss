@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+%badge {
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  transform: scale(0.9);
+  border-radius: 100vw;
+  font-family: $ff-roboto;
+}

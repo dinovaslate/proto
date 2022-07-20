@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+.navbar {
+  display: none;
+  @include mq(medium) {
+    @include flex($align: center, $justify: space-between);
+  }
+
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-color: clr(neutral, light);
+  box-shadow: 0 10px 10px 0 rgba($color: #000000, $alpha: 0.2);
+
+  padding-inline: 1rem;
+  .left-content {
+    @include bold($ff-bebas-neue);
+    font-size: font-size(700);
+  }
+  &__item {
+    font-family: $ff-roboto;
+    border-inline: 1px solid rgba($color: #000, $alpha: 0.1);
+    font-weight: bold;
+    padding: 1.25rem 1rem;
+  }
+  .right-content {
+    @include flex();
+  }
+  .profile {
+    padding-block: 10px;
+    @include flex($align: center, $justify: center, $gap: 1rem);
+    padding-inline: 1rem;
+    &__picture img {
+      width: 40px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 0 clr(primary, orange);
+    }
+    .profile__content {
+      &__name {
+        @include bold($ff-roboto);
+        text-transform: capitalize;
+        line-height: 15px;
+      }
+      &__desc {
+        font-weight: 200 !important;
+        font-size: font-size(200);
+      }
+    }
+  }
+}

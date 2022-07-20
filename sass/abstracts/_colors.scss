@@ -5,9 +5,12 @@ $colors: (
     dark: black,
   ),
   primary: (
-    light: lightblue,
-    normal: blue,
-    dark: darkblue,
+    red: #ffa4a3,
+    orange: #ffd6aa,
+    yellow: #fbffb5,
+    green: #bcffb7,
+    blue: #b4d7ff,
+    blue-dark: darken(#b4d7ff, 20%),
   ),
   accent: orange,
 );

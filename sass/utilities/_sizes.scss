@@ -1,5 +1,5 @@
 @use '../abstracts/' as *;
-@each $size-name, $size-value in $font-sizes {
+@each $size-name, $size-value in $sizes {
   .margin {
     &-#{$size-name} {
       margin: $size-value;
@@ -48,4 +48,8 @@
       }
     }
   }
+}
+
+.section-margin {
+  margin-top: $size-section;
 }
