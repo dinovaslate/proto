@@ -117,7 +117,7 @@ body {
 .header-subtitle {
   width: 500px;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 350px) {
   .header-subtitle {
     width: fit-content;
     font-size: 1.3125rem !important;
@@ -274,6 +274,7 @@ body {
   }
 }
 .card__action {
+  display: none;
   cursor: pointer;
   transition: 500ms ease-in-out;
   background-color: #ff2826;
@@ -282,6 +283,11 @@ body {
   font-family: system-ui, sans-serif;
   font-weight: 600;
   padding: 0.5rem 1.75rem;
+}
+@media screen and (min-width: 45em) {
+  .card__action {
+    display: block !important;
+  }
 }
 .card__action:hover {
   background-color: #d10200 !important;

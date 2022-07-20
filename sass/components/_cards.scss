@@ -85,6 +85,10 @@
     position: relative;
   }
   &__action {
+    @include mq(medium) {
+      display: block !important;
+    }
+    display: none;
     cursor: pointer;
     transition: 500ms ease-in-out;
     background-color: color.scale(clr(primary, red), $lightness: -30%);
