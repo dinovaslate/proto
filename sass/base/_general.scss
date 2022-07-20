@@ -1,5 +1,8 @@
 @use '../abstracts' as *;
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
-  overflow-x: hidden;
+  position: relative;
   @include mq(medium) {
     padding-top: 30px;
   }

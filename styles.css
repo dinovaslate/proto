@@ -8,6 +8,11 @@
   font: inherit;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
-  overflow-x: hidden;
+  position: relative;
 }
 @media screen and (min-width: 45em) {
   body {
@@ -298,7 +303,7 @@ body {
   position: fixed;
   inset: auto 0 0 0;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   display: flex;
   justify-content: center;
