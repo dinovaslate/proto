@@ -1,0 +1,17 @@
+@use 'sass:list';
+@use 'sass:string';
+
+@function suggest($size) {
+  $units: em, ch, ex, rem, vw, vh, cm, mm, in, px, pt, pc;
+  $suggestions: ();
+  @each $unit in $units {
+    @if string.index(unit($size), $unit) !=
+      null or
+      string.index($unit, unit($size)) ==
+      1
+    {
+      $suggestions: list.append($suggestions, $unit, 'slash');
+    }
+  }
+  @return $suggestions;
+}

@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+@use 'sass:meta';
+@each $color, $shade in $colors {
+  @if meta.type-of($shade) == map {
+    @each $subcolor, $subshade in $shade {
+      .clr-#{$color}-#{$subcolor} {
+        color: $subshade;
+      }
+      .bg-#{$color}-#{$subcolor} {
+        color: $subshade;
+      }
+    }
+  } @else {
+    .clr-#{$color} {
+      color: $shade;
+    }
+    .bg-#{$color} {
+      color: $shade;
+    }
+  }
+}
